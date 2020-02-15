@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Bensouici"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/prenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="yacine"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/nom"
+            android:paddingLeft="8dp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/prenom"
+            android:text="("
+            android:textSize="16sp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"/>
+        <TextView
+            android:id="@+id/userType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="student"
+            android:layout_toRightOf="@id/left"
+            android:layout_marginRight="2dp"/>
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/userType"
+            android:text=")"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/commentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            tools:text="12:32"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/commentTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="c'est tres bien wow  !!"
+            android:textSize="16sp"
+            android:layout_below="@id/prenom"
+            android:textColor="#000"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp" />
+</RelativeLayout>

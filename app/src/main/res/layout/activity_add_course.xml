@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCourseActivity"
+    android:background="@color/lightGray">
+
+    <RelativeLayout
+        android:id="@+id/entete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dam">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/refresh"
+            android:layout_margin="16dp"
+            android:backgroundTint="#32CD32"
+            android:layout_alignParentRight="true"
+            app:borderWidth="0dp"/>
+
+        <TextView
+            android:id="@+id/accronyme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            tools:text="DAM"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accronyme"
+            tools:text="developement d'applications mobile"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="18dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/nbrCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="5"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="credits"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/nbrCredit"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listCour"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CourActivity"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8.0dp"
+        android:layout_below="@id/entete" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#32CD32"
+        android:src="@drawable/add"
+        app:fabCustomSize="56dp"
+        app:borderWidth="0dp"/>
+
+
+</RelativeLayout>

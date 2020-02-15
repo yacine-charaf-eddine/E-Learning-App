@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:background="@color/lightGray">
+
+    <RelativeLayout
+        android:id="@+id/cour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/courTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFF"
+            tools:text="cour 1"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8.0dp"
+        android:layout_below="@id/cour"
+        android:layout_above="@id/linear"/>
+
+   <LinearLayout
+       android:id="@+id/linear"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_alignParentBottom="true">
+       <EditText
+           android:id="@+id/comment"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="text"
+           android:hint="Add Comment"
+           android:layout_marginLeft="8dp"
+           android:layout_marginRight="8dp"/>
+       <Button
+           android:id="@+id/post"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/background_border"
+           android:backgroundTint="@color/colorPrimary"
+           android:textSize="16sp"
+           android:textColor="#FFF"
+           android:text="Add Comment"
+           android:layout_marginTop="12dp"
+           android:layout_marginRight="40dp"
+           android:layout_marginLeft="40dp"
+           android:layout_marginBottom="12dp"/>
+   </LinearLayout>
+
+</RelativeLayout>

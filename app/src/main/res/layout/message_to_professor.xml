@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/toTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To :"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"/>
+
+    <Spinner
+        android:id="@+id/professor_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/toTxt"/>
+
+    <TextView
+        android:id="@+id/objectTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Object :"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:layout_below="@id/toTxt"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"/>
+    <EditText
+        android:id="@+id/objectValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/objectTxt"
+        android:layout_below="@id/professor_spinner" />
+    <TextView
+        android:id="@+id/messageTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message :"
+        android:textSize="16dp"
+        android:layout_below="@id/objectTxt"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/messageValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageTxt"
+        android:layout_margin="8dp"/>
+    <Button
+        android:id="@+id/sendMessageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_border"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textColor="#FFF"
+        android:text="Send Message"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="12dp"
+        android:layout_below="@id/messageValue"/>
+
+</RelativeLayout>
